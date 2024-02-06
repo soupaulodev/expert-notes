@@ -5,7 +5,7 @@ import { toast } from 'sonner'
 
 export function NewNoteCard () {
     const [shouldShowOnboarding, setShouldShowOnboarding] = useState(true);
-    const [content, setContent] = useState('');
+    // const [content, setContent] = useState('');
 
     function handleStartEditor () {
       setShouldShowOnboarding(false)
