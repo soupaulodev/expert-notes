@@ -5,7 +5,7 @@ import { toast } from 'sonner'
 
 export function NewNoteCard () {
     const [shouldShowOnboarding, setShouldShowOnboarding] = useState(true);
-    // const [content, setContent] = useState('');
+    const [content, setContent] = useState('');
 
     function handleStartEditor () {
       setShouldShowOnboarding(false)
@@ -15,12 +15,12 @@ export function NewNoteCard () {
       if (event.target.value === '') {
         setShouldShowOnboarding(true)
       }
+      setContent(event.target.value);
     }
 
     function handleSaveNote (event: FormEvent) {
       event.preventDefault()
-
-      toast.success('Nota criada com sucesso!')
+      content!=='' ? toast.success('Nota criada com sucesso!') : toast.error('Voce não pode adicionar uma nota vazia.')
     }
 
     return (
