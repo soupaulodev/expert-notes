@@ -67,17 +67,17 @@ export function App() {
           <input 
             type="text" 
             placeholder='Busque em suas notas'
-            className='w-full bg-transparent text-3xl font-semibold -tracking-tight outline-none placeholder:text-slate-500'
+            className='w-full bg-transparent text-3xl font-semibold -tracking-tight outline-none placeholder:text-gray-500'
             onChange={handleSearch}
           />
         </form>
-        <button type="button" onClick={onAllNoteDeleted} className='hidden md:flex flex-row items-center gap-2 text-slate-400 hover:text-red-400'>
+        <button type="button" onClick={onAllNoteDeleted} className='hidden md:flex flex-row items-center gap-2 text-gray-400 hover:text-red-400'>
           <Eraser className='size-5'/>
-          <p className='text-sm text-nowrap'>Apagar tudo</p>
+          <p className='text-sm text-nowrap'>Excluir tudas</p>
         </button>
 
       </div>
-      <div className='h-px bg-slate-700' />
+      <div className='h-px bg-gray-700' />
       
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[250px]'>
         <NewNoteCard onNoteCreated={onNoteCreated} />
