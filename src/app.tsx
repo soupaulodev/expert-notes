@@ -71,7 +71,7 @@ export function App() {
             onChange={handleSearch}
           />
         </form>
-        <button type="button" onClick={onAllNoteDeleted} className='md:hidden flex flex-row items-center gap-2 text-slate-400 hover:text-red-400'>
+        <button type="button" onClick={onAllNoteDeleted} className='hidden md:flex flex-row items-center gap-2 text-slate-400 hover:text-red-400'>
           <Eraser className='size-5'/>
           <p className='text-sm text-nowrap'>Apagar tudo</p>
         </button>
