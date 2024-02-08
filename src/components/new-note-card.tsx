@@ -55,6 +55,7 @@ export function NewNoteCard ({ onNoteCreated }: NewNoteCardProps) {
 
       if(speechRecognition !== null) {
         speechRecognition.stop()
+        setButtonDisable(false)
         toast.info('Gravação interrompida.')
       }
     }
