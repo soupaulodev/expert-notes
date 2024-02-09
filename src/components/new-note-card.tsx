@@ -14,6 +14,7 @@ export function NewNoteCard ({ onNoteCreated }: NewNoteCardProps) {
     const [content, setContent] = useState('');
     const [buttonDisable, setButtonDisable] = useState(true);
     const [isRecording, setIsRecording] = useState(false);
+    const [dialogOpen, setDialogOpen] = useState(false);
 
     function handleStartRecording () {
       setIsRecording(true)
@@ -82,13 +83,16 @@ export function NewNoteCard ({ onNoteCreated }: NewNoteCardProps) {
         setContent('')
         setShouldShowOnboarding(true)
         setButtonDisable(true)
+        setDialogOpen(false)
       } else {
         toast.error('Voce não pode adicionar uma nota vazia.')
       }
     }
 
     return (
-      <Dialog.Root>
+      <Dialog.Root open={dialogOpen} onOpenChange={() => {
+        setDialogOpen(!dialogOpen)
+      }}>
       <Dialog.Trigger className='rounded-md text-left flex flex-col bg-gray-700 p-5 gap-3 overflow-hidden relative outline-none hover:ring-2 hover:ring-gray-600 focus-visible:ring-2 focus-visible:ring-lime-400'>
 
           <span className='text-sm font-medium text-gray-300 text-transform: capitalize'>Adicionar nota</span>
