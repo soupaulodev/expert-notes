@@ -1,8 +1,8 @@
 ![Cover](./.github/cover.png)
 
-# NLW Expert (React)
+# Expert Notes
 
-Essa aplicação foi desenvolvida durante o NLW Experts da Rocketseat utilizando React, TypeScript, Tailwind e a SpeechRecognition API.
+O Expert Notes é uma fusão de criatividade e praticidade. Além de permitir que você digite suas anotações, oferecemos uma funcionalidade inovadora: transcrição de áudio para texto. Com apenas um toque, seu dispositivo se transforma em um assistente pessoal, capturando sua ideia falada e transformando-a em palavras escritas com perfeição. Liberte sua criatividade e descubra um novo mundo de possibilidades em nossa nota que une a arte de criar com a tecnologia moderna.
 
 ## Executando
 
